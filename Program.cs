@@ -1,12 +1,14 @@
-using System;
-
 namespace hwapp
 {
+	using System;
+	
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+			SingletonTest singletonTest = new SingletonTest();
         }
     }
+	
+	
 }
