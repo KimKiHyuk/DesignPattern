@@ -7,6 +7,7 @@ namespace hwapp
         static void Main(string[] args)
         {
 			SingletonTest singletonTest = new SingletonTest();
+			FactoryTest factoryTest = new FactoryTest();
         }
     }
 	
