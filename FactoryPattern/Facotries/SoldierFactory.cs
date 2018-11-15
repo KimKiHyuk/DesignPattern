@@ -4,7 +4,7 @@ namespace hwapp
 {
 	public class SoldierFactory : ISoldierFactory
 	{
-		public ISoldier ConCreateSoldier(int i)
+		public ASoldier ConCreateSoldier(int i)
 		{
 			if (i == 0)
 			{
