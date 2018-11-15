@@ -1,4 +1,9 @@
-### 디자인패턴 저장용
+### 디자인패턴 스켈레톤 코드 저장용
+
+### enviroment
+
+* C# .NET core 2.0
+* goorm ide
 
 ## To do
 
