@@ -14,4 +14,5 @@
 * observer 
 * iterator pattern
 * facade pattern
+* IOC (dependency injection)
 * ???
