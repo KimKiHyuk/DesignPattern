@@ -4,6 +4,12 @@ namespace hwapp
 {	
 	public abstract class ASoldier : ISoldier
 	{
+		protected string Nation
+		{
+			get;
+			set;
+		}
+		
 		protected string Name
 		{
 			get;	
