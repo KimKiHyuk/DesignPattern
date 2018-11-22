@@ -9,6 +9,8 @@ namespace hwapp
 			SingletonTest singletonTest = new SingletonTest();
 			FactoryTest factoryTest = new FactoryTest();
 			AbstractFactoryTest abstrctFactroyTest = new AbstractFactoryTest();
+			PrototypeTest prototypeTest = new PrototypeTest();
+
         }
     }
 	
