@@ -1,18 +1,24 @@
 namespace hwapp
 {
 	using System;
+	using System.Collections.Generic;
 	
     class Program
     {
         static void Main(string[] args)
         {
-			SingletonTest singletonTest = new SingletonTest();
-			FactoryTest factoryTest = new FactoryTest();
-			AbstractFactoryTest abstrctFactroyTest = new AbstractFactoryTest();
-			PrototypeTest prototypeTest = new PrototypeTest();
-
+			List<ITestStep> testCase = new List<ITestStep>()
+			{
+				new SingletonTest(),
+				new FactoryTest(),
+				new AbstractFactoryTest(),
+				new PrototypeTest()
+			};
+			
+			foreach (var test in testCase)
+			{
+				test.Run();
+			}
         }
     }
-	
-	
 }

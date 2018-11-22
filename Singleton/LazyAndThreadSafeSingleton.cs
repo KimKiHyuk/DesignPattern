@@ -6,7 +6,6 @@ namespace hwapp
 	{
 		private LazyAndThreadSafeSingleton()
 		{
-			Console.WriteLine("LazyAndThreadSafeSingleton Constructor invoked");
 		}
 		
 		public static LazyAndThreadSafeSingleton Instance
@@ -21,7 +20,6 @@ namespace hwapp
 		{
 			static Nested()
 			{
-				Console.WriteLine("LazyAndThreadSafeSingleton -> Nested Constructor invoked");
 			}
 			
 			internal static readonly LazyAndThreadSafeSingleton instance = new LazyAndThreadSafeSingleton();
