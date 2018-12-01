@@ -11,7 +11,6 @@ namespace hwapp
 		
 		public void Run()
 		{
-			Console.WriteLine("======= Start FactoryTest ===========\n");
 			ISoldierFactory factory;
 			
 			factory = new SoldierFactory();
@@ -21,8 +20,6 @@ namespace hwapp
 				ASoldier soldier = factory.ConCreateSoldier(i);
 				soldier.ActivateSoldier();
 			}
-			
-			Console.WriteLine("======= End FactoryTest ===========\n");
 		}
 	}
 }

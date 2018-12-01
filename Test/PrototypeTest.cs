@@ -11,7 +11,6 @@ namespace hwapp
 		
 		public void Run()
 		{
-			Console.WriteLine("======= Start PrototypeTest ===========\n");
 			APrototype army = new ArmyPrototype(1);
 			APrototype navy = new NavyPrototype(2);
 			
@@ -25,9 +24,6 @@ namespace hwapp
 			navy = navy.Clone();
 			Console.WriteLine("Object : {0}\nHash : {1}\nProcessID : {2}", navy, navy.GetHashCode(), navy.ProcessID);
 			
-			
-			Console.WriteLine("======= End PrototypeTest ===========\n");
-
 		}
 	}
 }			

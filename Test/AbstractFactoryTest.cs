@@ -11,7 +11,6 @@ namespace hwapp
 		
 		public void Run()
 		{
-			Console.WriteLine("======= Start AbstractFactoryTest ===========\n");
 			IAbstractFactory Afactory = new AbstractFactory();
 			
 			for (int i = 0; i < 2; i++)
@@ -24,8 +23,6 @@ namespace hwapp
 					soldier.ActivateSoldier();
 				}
 			}
-			
-			Console.WriteLine("======= End AbstractFactoryTest ===========\n");
 		}
 	}
 }

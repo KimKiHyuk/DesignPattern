@@ -15,7 +15,6 @@ namespace hwapp
 		
 		public void Run()
 		{	
-			Console.WriteLine("======= Start SingletonTest ===========\n");
 			if (newInstance_1 == newInstance_2)
 			{
 				Console.WriteLine("Singleton instances are same");
@@ -24,8 +23,6 @@ namespace hwapp
 			{
 				Console.WriteLine("Singleton instances are NOT same");
 			}
-			
-			Console.WriteLine("\n======= End SingletonTest ===========\n");
 		}
 	}
 }

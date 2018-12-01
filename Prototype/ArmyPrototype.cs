@@ -8,7 +8,6 @@ namespace hwapp
 		
 		public override APrototype Clone()
 		{
-			Console.WriteLine("========={0} Cloning...=============", this);
 			return this.MemberwiseClone() as ArmyPrototype;
 		}
 	}
