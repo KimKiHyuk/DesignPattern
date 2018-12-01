@@ -1,11 +1,9 @@
-### 디자인패턴 스켈레톤 코드 저장용
-
 ### enviroment
 
 * C# .NET core 2.0
 * goorm ide
 
-## To do
+## List of pattern
 
 * Singleton(thread-safety, laziness)
 * Builder
@@ -16,3 +14,8 @@
 * facade pattern
 * IOC (dependency injection)
 * ???
+
+
+## To do
+
+* adding UML for easy understanding
