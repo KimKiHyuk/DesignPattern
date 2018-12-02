@@ -13,14 +13,15 @@ namespace hwapp
 				new FactoryTest(),
 				new AbstractFactoryTest(),
 				new PrototypeTest(),
-				new FacadeTest()
+				new FacadeTest(),
+				new IteratorTest()
 			};
 			
 			foreach (var test in testCase)
 			{
 				Console.WriteLine("Test : " + test.GetType());
 				test.Run();
-				Console.WriteLine("==========================");
+				Console.WriteLine("======================");
 				
 			}
         }
