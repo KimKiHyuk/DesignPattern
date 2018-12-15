@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace hwapp
 {
 	internal class SystemManager : Kernel
-	{	
+	{
 		private uint _cpuTemperature;
 		private bool _memoryOut;
 		
