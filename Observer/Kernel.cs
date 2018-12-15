@@ -8,34 +8,34 @@ namespace hwapp
 	
 		private event NotifyHandler NotifyEvent;
 		
-		List<IObserver> observedElements;
+		private List<IObserver> observedElements;
 		
 		public Kernel()
 		{
 			this.observedElements = new List<IObserver>();
 		}
 				
-		public void Attach(IObserver observer)
+		public virtual void Attach(IObserver observer)
 		{
 			this.observedElements.Add(observer);
 		}
 		
-		public void AttachHandler(NotifyHandler handler)
+		public virtual void AttachHandler(NotifyHandler handler)
 		{
 			this.NotifyEvent += handler;
 		}
 		
-		public void Detach(IObserver observer)
+		public virtual void Detach(IObserver observer)
 		{
 			this.observedElements.Remove(observer);	
 		}
 		
-		public void DetachHandler(NotifyHandler handler)
+		public virtual void DetachHandler(NotifyHandler handler)
 		{
 			this.NotifyEvent -= handler;
 		}
 		
-		public void Notify()
+		public virtual void Notify()
 		{
 			foreach (var observer in observedElements)
 			{
@@ -43,7 +43,7 @@ namespace hwapp
 			}
 		}
 		
-		public void Notify(string message)
+		public virtual void Notify(string message)
 		{
 			if (NotifyEvent != null)
 			{
