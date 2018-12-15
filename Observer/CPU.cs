@@ -16,5 +16,10 @@ namespace hwapp
 		{
 			Console.WriteLine("CPU information has been updated - " + this._systemManager.cpuTemperature);
 		}
+		
+		public void UpdateByEvent(string message)
+		{
+			Console.WriteLine(string.Format("[{0}] CPU information has been updated - {1}", message, this._systemManager.cpuTemperature));
+		}
 	}
 }

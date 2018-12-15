@@ -21,6 +21,13 @@ namespace hwapp
 			manager.cpuTemperature = 50;
 			manager.memoryOut = true;			
 			manager.Notify();
+			
+			manager.AttachHandler(new CPU(manager).UpdateByEvent);
+			manager.AttachHandler(new RAM(manager).UpdateByEvent);
+			
+			manager.Notify("notice message");
 		}
+		
+		
 	}
 }

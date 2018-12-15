@@ -16,5 +16,10 @@ namespace hwapp
 		{
 			Console.WriteLine("RAM information has been updated - " + this._systemManager.memoryOut);
 		}
+		
+		public void UpdateByEvent(string message)
+		{
+			Console.WriteLine(string.Format("[{0}] RAM information has been updated - {1}", message,  this._systemManager.memoryOut));
+		}
 	}
 }
