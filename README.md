@@ -13,6 +13,7 @@
 * iterator pattern
 * facade pattern
 * IOC (dependency injection)
+* Strategy pattern
 * ???
 
 
