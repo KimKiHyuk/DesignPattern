@@ -1,0 +1,10 @@
+/workspace/dotnet/bin/Debug/netcoreapp2.0/hwapp.deps.json
+/workspace/dotnet/bin/Debug/netcoreapp2.0/hwapp.runtimeconfig.json
+/workspace/dotnet/bin/Debug/netcoreapp2.0/hwapp.runtimeconfig.dev.json
+/workspace/dotnet/bin/Debug/netcoreapp2.0/hwapp.dll
+/workspace/dotnet/bin/Debug/netcoreapp2.0/hwapp.pdb
+/workspace/dotnet/obj/Debug/netcoreapp2.0/hwapp.csproj.CoreCompileInputs.cache
+/workspace/dotnet/obj/Debug/netcoreapp2.0/hwapp.AssemblyInfoInputs.cache
+/workspace/dotnet/obj/Debug/netcoreapp2.0/hwapp.AssemblyInfo.cs
+/workspace/dotnet/obj/Debug/netcoreapp2.0/hwapp.dll
+/workspace/dotnet/obj/Debug/netcoreapp2.0/hwapp.pdb
