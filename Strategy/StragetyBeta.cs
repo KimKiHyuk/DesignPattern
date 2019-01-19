@@ -2,7 +2,7 @@ using System;
 
 namespace hwapp
 {
-	internal class StragetyBeta : IStragety
+	internal class StrategyBeta : IStrategy
 	{
 		public void Algorithm()
 		{

@@ -2,7 +2,7 @@ using System;
 
 namespace hwapp
 {
-	internal interface IStragety
+	internal interface IStrategy
 	{
 		void Algorithm();
 	}
