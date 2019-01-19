@@ -16,7 +16,8 @@ namespace hwapp
 				new FacadeTest(),
 				new IteratorTest(),
 				new ObserverTest(),
-				new IOCTest()
+				new IOCTest(),
+				new StragetyTest()
 			};
 			
 			foreach (var test in testCase)
