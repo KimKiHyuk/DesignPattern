@@ -14,6 +14,7 @@
 * facade pattern
 * IOC (dependency injection)
 * Strategy pattern
+* Proxy pattern
 * ???
 
 
