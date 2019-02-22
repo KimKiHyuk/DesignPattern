@@ -12,7 +12,19 @@ namespace hwapp
 		
 		public void Run()
 		{
-			var obj = new CommandUser();
+			
+			var user = new CommandUser();
+			
+			user.CommandType = typeof(CreateCommand);
+			user.ExecuteCommand("/path/main/submodule.hpp");
+			
+			user.CommandType = typeof(DeleteCommand);
+			user.ExecuteCommand("/path/main/main.cpp");
+			
+			user.Undo();
+			user.Redo();
+
+			
 		}
 		
 
