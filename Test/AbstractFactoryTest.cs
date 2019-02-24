@@ -2,8 +2,8 @@ namespace hwapp
 {
 	using System;
 	
-	public class AbstractFactoryTest : ITestStep
-	{
+	public class AbstractFactoryTest
+	{ /*
 		public AbstractFactoryTest()
 		{
 			
@@ -24,5 +24,6 @@ namespace hwapp
 				}
 			}
 		}
+		*/
 	}
 }

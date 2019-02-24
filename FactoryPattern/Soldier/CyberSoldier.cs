@@ -2,18 +2,11 @@ using System;
 
 namespace hwapp
 {
-	public class CyberSoldier : ASoldier
+	public class CyberSoldier : SoldierTemplate
 	{
-		public CyberSoldier() : this("김싸사", "정보통신", 330)
+		public CyberSoldier() : base()
 		{
 			
-		}
-		public CyberSoldier(string Name, string Classes, int DutyPeriod)
-		{
-			this.Name = Name;
-			this.Classes = Classes;
-			this.DutyPeriod = DutyPeriod;
-			this.Nation = string.Empty;
 		}
 		
 		public CyberSoldier(string Name, string Classes, int DutyPeriod, string Nation)
@@ -24,12 +17,9 @@ namespace hwapp
 			this.Nation = Nation;
 		}
 		
-		
-		
-		public override void ActivateSoldier()
+		public override void GetReport()
 		{
-			// something polymorphism things
-			Console.WriteLine("\n-이름 : {0}\n-병과 : {1}\n-국적 : {2}\n-전역 : {3}", 				this.Name, this.Classes, this.Nation, this.discharge(this.DutyPeriod));
+			Console.WriteLine("private report for " + this.Name);	
 		}
 	
 	}

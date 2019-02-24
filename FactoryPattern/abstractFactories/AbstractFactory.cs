@@ -2,9 +2,9 @@ using System;
 
 namespace hwapp
 {
-	public class AbstractFactory : IAbstractFactory
+	public class AbstractFactory
 	{		
-		public ISoldierFactory ConCreateFactroy(int i)
+		/*public ISoldierFactory ConCreateFactroy(int i)
 		{
 			if (i == 0)
 			{
@@ -19,5 +19,6 @@ namespace hwapp
 				return new AmericanSoldierFactory();
 			}
 		}
+		*/
 	}
 }

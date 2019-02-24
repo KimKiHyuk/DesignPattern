@@ -2,8 +2,9 @@ using System;
 
 namespace hwapp
 {
-	public class KoreanSoldierFactory :  ISoldierFactory
+	public class KoreanSoldierFactory
 	{
+		/*
 		public ASoldier ConCreateSoldier(int i)
 		{
 			if (i == 0)
@@ -19,5 +20,6 @@ namespace hwapp
 				return new CannonSoldier("박포병", "포병", 300, "korean");
 			}
 		}
+		*/
 	}
 }

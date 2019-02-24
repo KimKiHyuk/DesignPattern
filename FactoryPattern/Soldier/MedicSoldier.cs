@@ -2,17 +2,10 @@ using System;
 
 namespace hwapp
 {
-	public class MedicSoldier : ASoldier
+	public class MedicSoldier : SoldierTemplate
 	{
-		public MedicSoldier() : this("박붕대", "의무", 212)
+		public MedicSoldier() : base()
 		{
-		}
-		public MedicSoldier(string Name, string Classes, int DutyPeriod)
-		{
-			this.Name = Name;
-			this.Classes = Classes;
-			this.DutyPeriod = DutyPeriod;
-			this.Nation = string.Empty;
 		}
 		
 		public MedicSoldier(string Name, string Classes, int DutyPeriod, string Nation)
@@ -23,10 +16,9 @@ namespace hwapp
 			this.Nation = Nation;
 		}
 		
-		public override void ActivateSoldier()
+		public override void GetReport()
 		{
-			// something polymorphism things
-			Console.WriteLine("\n-이름 : {0}\n-병과 : {1}\n-국적 : {2}\n-전역 : {3}", 				this.Name, this.Classes, this.Nation, this.discharge(this.DutyPeriod));
+			Console.WriteLine("private report for " + this.Name);	
 		}
 	}
 }
