@@ -4,6 +4,6 @@ namespace hwapp
 {
 	public interface ISoldierFactory
 	{
-		ASoldier ConCreateSoldier(int i);
+		SoldierTemplate GetSoldierInstance(Type type, string name, string classes, int dutyPeriod, string nation);
 	}
 }

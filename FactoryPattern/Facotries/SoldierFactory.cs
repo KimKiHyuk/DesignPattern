@@ -4,20 +4,9 @@ namespace hwapp
 {
 	public class SoldierFactory : ISoldierFactory
 	{
-		public ASoldier ConCreateSoldier(int i)
-		{
-			if (i == 0)
-			{
-				return new CyberSoldier();
-			}
-			else if (i == 1)
-			{
-				return new MedicSoldier();
-			}
-			else
-			{
-				return new CannonSoldier();
-			}
+		public SoldierTemplate GetSoldierInstance(Type type, string name, string classes, int dutyPeriod, string nation)
+		{	
+			return (SoldierTemplate)Activator.CreateInstance(type, name, classes, dutyPeriod, nation);
 		}
 	}
 }
