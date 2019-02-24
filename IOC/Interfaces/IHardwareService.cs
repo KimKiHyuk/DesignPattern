@@ -2,7 +2,7 @@ using System;
 
 namespace hwapp
 {
-	internal interface IServiceCategory
+	internal interface IHardwareService
 	{
 		void LoadService();
 	}
