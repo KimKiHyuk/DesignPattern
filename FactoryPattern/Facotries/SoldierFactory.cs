@@ -2,7 +2,7 @@ using System;
 
 namespace hwapp
 {
-	public class SoldierFactory : ISoldierFactory
+	public class SoldierFactory
 	{
 		public SoldierTemplate GetSoldierInstance(Type type, string name, string classes, int dutyPeriod, string nation)
 		{	
