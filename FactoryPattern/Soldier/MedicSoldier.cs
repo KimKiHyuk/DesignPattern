@@ -8,12 +8,8 @@ namespace hwapp
 		{
 		}
 		
-		public MedicSoldier(string Name, string Classes, int DutyPeriod, string Nation)
+		public MedicSoldier(string Name, string Classes, int DutyPeriod, string Nation) : base(Name, Classes, DutyPeriod, Nation)
 		{
-			this.Name = Name;
-			this.Classes = Classes;
-			this.DutyPeriod = DutyPeriod;
-			this.Nation = Nation;
 		}
 		
 		public override void GetReport()

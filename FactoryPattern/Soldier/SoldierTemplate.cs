@@ -12,6 +12,15 @@ namespace hwapp
 			this.DutyPeriod = 607;
 			
 		}
+		
+		public SoldierTemplate(string Name, string Classes, int DutyPeriod, string Nation)
+		{
+			this.Name = Name;
+			this.Classes = Classes;
+			this.DutyPeriod = DutyPeriod;
+			this.Nation = Nation;
+		}
+		
 		protected string Nation
 		{
 			get;
