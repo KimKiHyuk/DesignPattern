@@ -4,7 +4,7 @@ namespace hwapp
 	
 	public class FactoryTest : ITestStep
 	{
-		private ISoldierFactory nonsanCamp;
+		private SoldierFactory nonsanCamp;
 		
 		public FactoryTest()
 		{
