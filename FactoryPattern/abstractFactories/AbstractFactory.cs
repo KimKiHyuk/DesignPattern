@@ -2,23 +2,11 @@ using System;
 
 namespace hwapp
 {
-	public class AbstractFactory
-	{		
-		/*public ISoldierFactory ConCreateFactroy(int i)
+	public abstract class AbstractFactory<T> where T : class
+	{
+		public virtual T GetInstance(Type type)
 		{
-			if (i == 0)
-			{
-				return new KoreanSoldierFactory(); 
-			}
-			else if (i == 1)
-			{
-				return new AmericanSoldierFactory();
-			}
-			else
-			{
-				return new AmericanSoldierFactory();
-			}
+			return (T)Activator.CreateInstance(type);
 		}
-		*/
 	}
 }
