@@ -10,10 +10,9 @@ namespace hwapp
 			this.Name = "X";
 			this.Classes = "X";
 			this.DutyPeriod = 607;
-			
 		}
 		
-		public SoldierTemplate(string Name, string Classes, int DutyPeriod, string Nation)
+		public SoldierTemplate(string Name, string Classes, int DutyPeriod, string Nation) // for single factory
 		{
 			this.Name = Name;
 			this.Classes = Classes;

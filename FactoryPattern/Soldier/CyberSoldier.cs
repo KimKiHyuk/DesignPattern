@@ -15,7 +15,7 @@ namespace hwapp
 		
 		public override void GetReport()
 		{
-			Console.WriteLine("private report for " + this.Name);	
+			Console.WriteLine("private report for " + this);	
 		}
 	
 	}

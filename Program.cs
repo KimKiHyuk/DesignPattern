@@ -9,9 +9,9 @@ namespace hwapp
         {
 			List<ITestStep> testCase = new List<ITestStep>()
 			{
-				new SingletonTest(),
+			//	new SingletonTest(),
 				new FactoryTest(),
-			//	new AbstractFactoryTest(),
+				new AbstractFactoryTest(),
 			//	new PrototypeTest(),
 			//	new FacadeTest(),
 			//	new IteratorTest(),
