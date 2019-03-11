@@ -6,31 +6,46 @@ namespace hwapp
 	{
 		public WeaponTemplate()
 		{
-			this.Name = "X";
-			this.Produced = "X";
+			this.data = new Data("X", "X");
 		}
 		
-		public WeaponTemplate(string Name, string Produced)
+		public WeaponTemplate(object data)
 		{
-			this.Name = Name;
-			this.Produced = Produced;
+			this.data = data as Data;
 		}
-		
-		protected string Name
-		{
-			get;	
-			set;
-		}
-		
-		protected string Produced
-		{
-			get;	
-			set;
-		}
+				
 
 		public virtual void ShowMeYourTag()
 		{
-			Console.WriteLine("\n-이름 : {0}\n-생산 : {1}", this.Name, this.Produced);
+			Console.WriteLine("\n-이름 : {0}\n-생산 : {1}", this.data.Name, this.data.Produced);
+		}
+		
+				
+		protected Data data
+		{
+			get;
+			set;
+		}
+		
+		protected internal class Data
+		{
+			public Data(string Name, string Produced)
+			{
+				this.Name = Name;
+				this.Produced = Produced;
+			}
+			
+			public string Name
+			{
+				get;	
+				set;
+			}
+		
+			public string Produced
+			{
+				get;	
+				set;
+			}
 		}
 	}
 }

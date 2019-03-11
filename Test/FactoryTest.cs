@@ -13,15 +13,14 @@ namespace hwapp
 		
 		public void Run()
 		{
-			this.RunHelper(typeof(CyberSoldier), "김사이버", "SW개발", 608, "대한민국");
-			this.RunHelper(typeof(CannonSoldier), "김포병", "관측", 500, "대한민국");
-			this.RunHelper(typeof(MedicSoldier), "김의무", "간호", 2, "대한민국");
+			this.RunHelper(typeof(CyberSoldier), new SoldierTemplate.Data("김사이버", "SW개발", "대한민국", 608));
+			this.RunHelper(typeof(CannonSoldier), new SoldierTemplate.Data("김포병", "관측", "대한민국", 500));
+			this.RunHelper(typeof(MedicSoldier), new SoldierTemplate.Data("김의무", "간호", "대한민국", 2));
 		}
 		
-		private void RunHelper(Type type, string name, string classes, int duty, string nation)
+		private void RunHelper(Type type, object param)
 		{
-			SoldierTemplate soldier = nonsanCamp.GetSoldierInstance(type, name, classes, duty, nation);
-			
+			SoldierTemplate soldier = nonsanCamp.GetSoldierInstance(type, param);		
 			soldier.ShowMeYourTag();
 			soldier.GetReport();
 		}
