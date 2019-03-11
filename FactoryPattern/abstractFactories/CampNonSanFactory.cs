@@ -2,17 +2,17 @@ using System;
 
 namespace hwapp
 {
-	public class CampNonSanFactory<T> : AbstractFactory<T> where T : class
+	public class CampNonSanFactory : AbstractFactory
 	{
 		public CampNonSanFactory()
 		{
 		
 		}
 		
-		public override T GetInstance(Type type, object param)
+		public override object GetInstance(Type type, object param)
 		{
 			Console.WriteLine("\n======== Create SoldierTemplate");
-			return (T)Activator.CreateInstance(type, param);
+			return Activator.CreateInstance(type, param);
 		}
 		
 	}

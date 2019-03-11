@@ -4,27 +4,26 @@ namespace hwapp
 	
 	public class AbstractFactoryTest : ITestStep
 	{
-		AbstractFactory<SoldierTemplate> nonsan;
-		AbstractFactory<WeaponTemplate> weapon;
+		AbstractFactory camp;
 		
 		public AbstractFactoryTest()
 		{
-			this.nonsan = new CampNonSanFactory<SoldierTemplate>();
-			this.weapon = new WeaponFactory<WeaponTemplate>();
 		}
 		
 		public void Run()
-		{	
-			var instance_of_nonsan = this.nonsan.GetInstance(typeof(CyberSoldier), new SoldierTemplate.Data("김사이버", "SW개발", "대한민국", 700));
+		{
+			this.camp = new CampNonSanFactory();
+			var instance_of_nonsan = this.camp.GetInstance(typeof(CyberSoldier), new SoldierTemplate.Data("김사이버", "SW개발", "대한민국", 700)) as SoldierTemplate;
 			instance_of_nonsan.ShowMeYourTag();
 			
-			instance_of_nonsan = this.nonsan.GetInstance(typeof(CyberSoldier));
+			instance_of_nonsan = this.camp.GetInstance(typeof(CyberSoldier)) as SoldierTemplate;
 			instance_of_nonsan.ShowMeYourTag();
 			
-			var instance_of_weapon = this.weapon.GetInstance(typeof(Rifie), new WeaponTemplate.Data("K-2", "대한민국"));
+			this.camp = new WeaponFactory();
+			var instance_of_weapon = this.camp.GetInstance(typeof(Rifie), new WeaponTemplate.Data("K-2", "대한민국")) as WeaponTemplate;
 			instance_of_weapon.ShowMeYourTag();
 			
-			instance_of_weapon = this.weapon.GetInstance(typeof(Rifie));
+			instance_of_weapon = this.camp.GetInstance(typeof(Rifie)) as WeaponTemplate;
 			instance_of_weapon.ShowMeYourTag();
 			
 		}
