@@ -8,7 +8,7 @@ namespace hwapp
 		{
 		}
 		
-		public Rifie(string Name, string Produced) : base(Name, Produced)
+		public Rifie(object data) : base(data)
 		{
 		}
 	}

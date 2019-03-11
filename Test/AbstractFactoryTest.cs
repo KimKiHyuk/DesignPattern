@@ -4,8 +4,8 @@ namespace hwapp
 	
 	public class AbstractFactoryTest : ITestStep
 	{
-		CampNonSanFactory<SoldierTemplate> nonsan;
-		WeaponFactory<WeaponTemplate> weapon;
+		AbstractFactory<SoldierTemplate> nonsan;
+		AbstractFactory<WeaponTemplate> weapon;
 		
 		public AbstractFactoryTest()
 		{
@@ -15,17 +15,18 @@ namespace hwapp
 		
 		public void Run()
 		{	
-			var instance_of_nonsan = this.nonsan.GetInstance(typeof(CyberSoldier), "김사이버", "SW개발", 32, "대한민국");
+			var instance_of_nonsan = this.nonsan.GetInstance(typeof(CyberSoldier), new SoldierTemplate.Data("김사이버", "SW개발", "대한민국", 700));
 			instance_of_nonsan.ShowMeYourTag();
 			
 			instance_of_nonsan = this.nonsan.GetInstance(typeof(CyberSoldier));
 			instance_of_nonsan.ShowMeYourTag();
 			
-			var instance_of_weapon = this.weapon.GetInstance(typeof(Rifie), "K-2", "대한민국");
+			var instance_of_weapon = this.weapon.GetInstance(typeof(Rifie), new WeaponTemplate.Data("K-2", "대한민국"));
 			instance_of_weapon.ShowMeYourTag();
 			
 			instance_of_weapon = this.weapon.GetInstance(typeof(Rifie));
 			instance_of_weapon.ShowMeYourTag();
+			
 		}
 	}
 }

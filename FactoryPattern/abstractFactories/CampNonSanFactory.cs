@@ -9,9 +9,11 @@ namespace hwapp
 		
 		}
 		
-		public T GetInstance(Type type, string name, string classes, int dutyPeriod, string nation)
+		public override T GetInstance(Type type, object param)
 		{
-			return (T)Activator.CreateInstance(type, name, classes, dutyPeriod, nation);
+			Console.WriteLine("\n======== Create SoldierTemplate");
+			return (T)Activator.CreateInstance(type, param);
 		}
+		
 	}
 }

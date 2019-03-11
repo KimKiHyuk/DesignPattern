@@ -8,7 +8,7 @@ namespace hwapp
 		{
 		}
 		
-		public Keyboard(string Name, string Produced) : base(Name, Produced)
+		public Keyboard(object data) : base(data)
 		{
 		}
 	}

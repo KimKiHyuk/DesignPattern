@@ -4,9 +4,9 @@ namespace hwapp
 {
 	public class SoldierFactory
 	{
-		public SoldierTemplate GetSoldierInstance(Type type, string name, string classes, int dutyPeriod, string nation)
+		public SoldierTemplate GetSoldierInstance(Type type, object param)
 		{	
-			return (SoldierTemplate)Activator.CreateInstance(type, name, classes, dutyPeriod, nation);
+			return (SoldierTemplate)Activator.CreateInstance(type, param);
 		}
 	}
 }

@@ -8,7 +8,7 @@ namespace hwapp
 		{
 		}
 		
-		public MedicSoldier(string Name, string Classes, int DutyPeriod, string Nation) : base(Name, Classes, DutyPeriod, Nation)
+		public MedicSoldier(object data) : base(data)
 		{
 		}
 		

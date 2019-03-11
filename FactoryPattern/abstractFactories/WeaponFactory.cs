@@ -9,9 +9,10 @@ namespace hwapp
 		
 		}
 		
-		public T GetInstance(Type type, string name, string produced)
+		public override T GetInstance(Type type, object param)
 		{
-			return (T)Activator.CreateInstance(type, name, produced);
+			Console.WriteLine("\n======== Create WeaponTemplate");
+			return (T)Activator.CreateInstance(type, param);
 		}
 	}
 }

@@ -6,53 +6,63 @@ namespace hwapp
 	{
 		public SoldierTemplate()
 		{
-			this.Nation = "X";
-			this.Name = "X";
-			this.Classes = "X";
-			this.DutyPeriod = 607;
+			this.data = new Data("X", "X", "X", -1);
 		}
 		
-		public SoldierTemplate(string Name, string Classes, int DutyPeriod, string Nation) // for single factory
+		public SoldierTemplate(object data) // for single factory
 		{
-			this.Name = Name;
-			this.Classes = Classes;
-			this.DutyPeriod = DutyPeriod;
-			this.Nation = Nation;
+			this.data = data as Data;
 		}
-		
-		protected string Nation
-		{
-			get;
-			set;
-		}
-		
-		protected string Name
-		{
-			get;	
-			set;
-		}
-		
-		protected string Classes
-		{
-			get;	
-			set;
-		}
-		
-		protected int DutyPeriod
-		{
-			get;
-			set;
-		}
-		
+			
 		public virtual bool discharge(int period) => (607 - period) <= 0;
-		
-				
 		
 		public virtual void ShowMeYourTag()
 		{
-			Console.WriteLine("\n-이름 : {0}\n-병과 : {1}\n-국적 : {2}\n-전역 : {3}", 				this.Name, this.Classes, this.Nation, this.discharge(this.DutyPeriod));
+			Console.WriteLine("\n-이름 : {0}\n-병과 : {1}\n-국적 : {2}\n-전역 : {3}", 	this.data.Name, this.data.Classes, this.data.Nation, this.discharge(this.data.DutyPeriod));
 		}
 		
 		public abstract void GetReport();
+		
+		protected Data data
+		{
+			get;
+			set;
+		}
+		
+		
+		protected internal class Data
+		{
+			public Data(string Name, string Classes, string Nation, int DutyPeriod)
+			{
+				this.Name = Name;
+				this.Classes = Classes;
+				this.Nation = Nation;
+				this.DutyPeriod = DutyPeriod;
+			}
+			
+			public string Nation
+			{
+				get;
+				set;
+			}
+		
+			public string Name
+			{
+				get;	
+				set;
+			}
+		
+			public string Classes
+			{
+				get;	
+				set;
+			}
+		
+			public int DutyPeriod
+			{
+				get;
+				set;
+			}
+		}
 	}
 }

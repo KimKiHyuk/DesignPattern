@@ -8,7 +8,7 @@ namespace hwapp
 		{
 		}
 		
-		public Grenade(string Name, string Produced) : base(Name, Produced)
+		public Grenade(object data) : base(data)
 		{
 		}
 	}
