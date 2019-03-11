@@ -2,14 +2,13 @@ using System;
 
 namespace hwapp
 {
-	public abstract class AbstractFactory<T> where T : class
-	{
-		public virtual T GetInstance(Type type)
+	public abstract class AbstractFactory
+	{	
+		public virtual object GetInstance(Type type)
 		{
-			Console.WriteLine("\n======== Create Base new template");
-			return (T)Activator.CreateInstance(type);
+			Console.WriteLine("\n======== Create Base");
+			return Activator.CreateInstance(type);
 		}
-		
-		public abstract T GetInstance(Type type, object param);
+		public abstract object GetInstance(Type type, object param);
 	}
 }
