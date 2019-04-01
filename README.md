@@ -8,14 +8,16 @@
 * Singleton(thread-safety, laziness)
 * Builder
 * prototype
-* Factory (abstract)
+* Factory
+* abstract factory
 * observer 
 * iterator pattern
 * facade pattern
 * IOC (dependency injection)
 * Strategy pattern
 * Proxy pattern
-* ???
+* Composite pattern
+* Command pattern
 
 
 ## To do
