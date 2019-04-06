@@ -9,17 +9,24 @@ namespace hwapp
         {
 			List<ITestStep> testCase = new List<ITestStep>()
 			{
+				// Creational Patterns
 				new FactoryTest(),
 				new AbstractFactoryTest(),
+				new SingletonTest(),
 				new PrototypeTest(),
+				new IOCTest(),
+				
+				// Structural Patterns
+				new CompositeTest(),
+				new ProxyTest(),
 				new FacadeTest(),
+				
+				// Behavioral Patterns
 				new IteratorTest(),
 				new ObserverTest(),
-				new IOCTest(),
 				new StrategyTest(),
-				new ProxyTest(),
 				new CommandTest(),
-				new CompositeTest(),
+
 			};
 			
 			foreach (var test in testCase)

@@ -3,23 +3,26 @@
 * C# .NET core 2.0
 * goorm ide
 
-## List of pattern
+## Type of patterns
 
-* Singleton(thread-safety, laziness)
-* Builder
+### Creational Patterns
+* Singleton
 * prototype
 * Factory
 * abstract factory
-* observer 
-* iterator pattern
-* facade pattern
 * IOC (dependency injection)
-* Strategy pattern
+
+### Behavioral Patterns
+* facade pattern
 * Proxy pattern
 * Composite pattern
+
+### Structural Patterns
+* observer 
+* iterator pattern
+* Strategy pattern
 * Command pattern
 
 
 ## To do
-
 * adding UML for easy understanding
