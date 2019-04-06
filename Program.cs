@@ -10,22 +10,29 @@ namespace hwapp
 			List<ITestStep> testCase = new List<ITestStep>()
 			{
 				// Creational Patterns
+				/*
 				new FactoryTest(),
 				new AbstractFactoryTest(),
 				new SingletonTest(),
 				new PrototypeTest(),
 				new IOCTest(),
+				*/
 				
 				// Structural Patterns
+				/*
 				new CompositeTest(),
 				new ProxyTest(),
 				new FacadeTest(),
+				*/
+				new AdaptorTest(),
 				
 				// Behavioral Patterns
+				/*
 				new IteratorTest(),
 				new ObserverTest(),
 				new StrategyTest(),
 				new CommandTest(),
+				*/
 
 			};
 			
@@ -34,7 +41,6 @@ namespace hwapp
 				Console.WriteLine("Test : " + test.GetType());
 				test.Run();
 				Console.WriteLine("======================");
-				
 			}
         }
     }
