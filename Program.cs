@@ -24,8 +24,8 @@ namespace hwapp
 				new ProxyTest(),
 				new FacadeTest(),
 				new AdaptorTest(),
-				*/
 				new DecoratorTest(),
+				*/
 				
 				// Behavioral Patterns
 				/*
@@ -34,6 +34,8 @@ namespace hwapp
 				new StrategyTest(),
 				new CommandTest(),
 				*/
+				new MediatorTest()
+
 			};
 			
 			foreach (var test in testCase)
