@@ -24,6 +24,7 @@
 * iterator pattern
 * Strategy pattern
 * Command pattern
+* Mediator pattern
 
 
 ## To do
