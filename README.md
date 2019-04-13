@@ -16,6 +16,8 @@
 * facade pattern
 * Proxy pattern
 * Composite pattern
+* Decorator pattern
+* Adaptor pattern
 
 ### Structural Patterns
 * observer 
